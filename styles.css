@@ -2,20 +2,40 @@ body{
     margin: 0;
     padding : 0;
     width : 100%;
-    height: 100%
+    height: 100%;
+    color: black;
+}
+
+.dark{
+    color: white;
+    background-color: rgb(70, 69, 69);
 }
 
 nav, li {
-    list-style-type : none; 
+    list-style-type : none;
     display: flex;
     background-color: rgb(188, 186, 186);
-    justify-content : right; 
+    justify-content : right;
+    gap : 20px;
 }
 
 .github{
     margin-right : 20px;
 }
 
+.toggle{
+    display: flex;
+    justify-content : left;
+}
+
 nav li:hover a {
   color: black;
+}
+
+header{
+    display : flex;
+    justify-content : center;
+    font-size : 30px;
+    font-weight: 900;
+    margin-top: 30px;
 }
