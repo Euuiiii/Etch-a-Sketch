@@ -11,21 +11,32 @@ body{
     background-color: rgb(70, 69, 69);
 }
 
-nav, li {
-    list-style-type : none;
-    display: flex;
+nav {
     background-color: rgb(188, 186, 186);
-    justify-content : right;
-    gap : 20px;
+    height : 60px;
+    display : flex;
+    align-items : center;
+    justify-content : flex-end;
 }
 
-.github{
-    margin-right : 20px;
-}
-
-.toggle{
+.nav-links {
     display: flex;
-    justify-content : left;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    background: transparent;
+}
+
+.github {
+    margin-right: 0;
+}
+
+.toggle-btn{
+    background-color : rgb(188, 186, 186);
 }
 
 nav li:hover a {
@@ -39,3 +50,19 @@ header{
     font-weight: 900;
     margin-top: 30px;
 }
+
+
+.container{
+    border : 1px solid black;
+    display : flex;
+    flex-wrap : wrap;
+    align-items : center;
+    justify-content : center;
+    height : 80dvh;
+    width : min(940px, 100%);
+    box-sizing : border-box;
+    background-color : #f0f1ef;
+    align-items : center;
+    margin : 20px auto 0;
+}
+

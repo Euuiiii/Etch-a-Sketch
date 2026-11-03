@@ -1,3 +1,4 @@
+// Dark mode toggle button 
 const toggle = document.querySelector('.toggle-btn');
 const body = document.body;
 
@@ -15,3 +16,14 @@ toggle.addEventListener('click', () => {
 
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
 });
+// Dark mode toggle button end
+
+const container = document.querySelector(".container");
+
+const totalSquares = 16 * 16;
+
+for (let i = 0; i < totalSquares; i++){
+  const sq = document.createElement('div');
+  container.appendChild(sq);
+  
+}
