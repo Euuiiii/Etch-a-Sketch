@@ -54,17 +54,20 @@ header{
 
 .container{
     border : 1px solid black;
-    display : flex;
-    flex-wrap : wrap;
-    align-items : center;
-    justify-content : center;
+    display : grid;
     height : 80dvh;
     width : min(940px, 100%);
     box-sizing : border-box;
     background-color : #f0f1ef;
-    align-items : center;
     margin : 20px auto 0;
 }
+
+.container > div {
+    min-width: 0;
+    min-height: 0;
+    border : 1px solid rgb(141, 138, 138);
+}
+
 
 
 .buttons{
@@ -78,5 +81,6 @@ header{
 .reset, .black, .white, .random{
     padding : 15px 30px;
     font-size : 20px;
-    border-radius : 20px;
+    border-radius : 20px;   
 }
+
